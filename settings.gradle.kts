@@ -1,10 +1,22 @@
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
-}
+//pluginManagement {
+//    repositories {
+//        google()
+//        mavenCentral()
+//        gradlePluginPortal()
+//    }
+//}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//        maven(url = "https://jitpack.io")
+//    }
+//}
+
+rootProject.name = "Waffle"
+include(":app")
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -13,7 +25,3 @@ dependencyResolutionManagement {
         maven(url = "https://jitpack.io")
     }
 }
-
-rootProject.name = "Waffle"
-include(":app")
- 
